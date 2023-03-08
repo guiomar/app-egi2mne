@@ -1,0 +1,5 @@
+{
+
+    "fname": "/network/lustre/iss01/home/saeed.zahran/mne_data/MNE-sample-data/MEG/sample/sample_audvis_raw.fif",
+    "include": "['D101', 'D102', 'D103']"
+}
