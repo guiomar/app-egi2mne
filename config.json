@@ -1,5 +1,5 @@
 {
 
-    "egi": "/network/lustre/iss01/home/saeed.zahran/mne_data/MNE-sample-data/MEG/sample/sample_audvis_raw.fif",
+    "egi": "Latinus/S01/GAZE_S01 20120309 1622001.raw",
     "include": "'D101', 'D102', 'D103'"
 }
