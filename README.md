@@ -3,7 +3,7 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.469-blue.svg)](https://doi.org/10.25663/brainlife.app.469)
 
-This Brainlife App converts EEG files from EGI format to MNE datatype
+This Brainlife App converts EEG files from EGI format to mne/raw datatype
 
 ## Authors
 - Guiomar Niso (guiomar.niso@ctb.upm.es)
