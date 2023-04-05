@@ -20,10 +20,13 @@ with open(__location__+'/config.json') as config_json:
 
 
 fname = config['egi']
-include = config['include']
+include_raw = config['include']
 
 # COPY THE METADATA CHANNELS.TSV, COORDSYSTEM, ETC ==============================
-
+if include_raw[0:3] != 'None':
+    include = include_raw.split(sep=',')
+else:
+    include = None
 
 raw = mne.io.read_raw_egi(fname, include = include)
 
