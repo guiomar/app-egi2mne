@@ -24,8 +24,9 @@ fname = config['egi']
 include_raw = config['include']
 
 # COPY THE METADATA CHANNELS.TSV, COORDSYSTEM, ETC ==============================
-if len(include_raw) > 0 & include_raw != 'None':
-    include = include_raw.split(sep=',')
+if len(include_raw) > 0:
+    if  include_raw != 'None':
+        include = include_raw.split(sep=',')
 else:
     include = None
 
