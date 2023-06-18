@@ -39,3 +39,5 @@ report.add_html(title="Channels", html=channel_info_html)
 # save mne/raw
 raw.save(os.path.join('out_dir','raw.fif'))
 
+# == SAVE REPORT ==
+report.save(os.path.join('out_dir','report.html'))
