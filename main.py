@@ -22,7 +22,7 @@ with open(__location__+'/config.json') as config_json:
 fname = config['egi']
 
 include_raw = config['include']
-
+report = mne.Report(title='Report')
 # COPY THE METADATA CHANNELS.TSV, COORDSYSTEM, ETC ==============================
 if len(include_raw) > 0:
     if  include_raw != 'None':
@@ -31,7 +31,13 @@ else:
     include = None
 
 raw = mne.io.read_raw_egi(fname, include = include)
+report.add_raw(raw=raw, title='Raw')
 
+channel_info_html = '<p><b>List of channels in this EEG file: </b></p>'+raw.ch_names
+
+report.add_html(title="Channels", html=channel_info_html)
 # save mne/raw
 raw.save(os.path.join('out_dir','raw.fif'))
 
+# == SAVE REPORT ==
+report.save(os.path.join('out_dir','report.html'))
