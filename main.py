@@ -33,7 +33,7 @@ else:
 raw = mne.io.read_raw_egi(fname, include = include)
 report.add_raw(raw=raw, title='Raw')
 
-channel_info_html = '<p><b>List of channels in this EEG file: </b></p>'+raw.ch_names
+channel_info_html = '<p><b>List of channels in this EEG file: </b></p>'+', '.join(raw.ch_names)
 
 report.add_html(title="Channels", html=channel_info_html)
 # save mne/raw
