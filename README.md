@@ -12,7 +12,7 @@ Converts EEG `.egi` EGI files to MNE raw data, using `mne.io.read_raw_egi` funct
     * `meeg/mne/raw` meg raw.fif data file
 
 ## Authors
-- [Guiomar Niso](guiomar.niso@ctb.upm.es), Instituto Cajal, CSIC, Spain
+- [Guiomar Niso](guiomar.niso@cajal.csic.es), Instituto Cajal, CSIC, Spain
 
 ## Citations
 We kindly ask that you cite the following articles when publishing papers and code using this app. 
